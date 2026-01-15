@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(blueviolet, black);
+    background-attachment: fixed;
+    margin-left: 0px;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Racing Sans One", sans-serif;
+}
+#logoImg {
+    position: absolute;
+    width: 150px;
+    z-index: 3;
+    top: 190px;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    animation: 2s linear 0s infinite logoImgRotation;
+}
+#credits {
+    position: absolute;
+    top: 275px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#credits a {
+    color: white;
+}
+#discordLink {
+    position: absolute;
+    top: 295px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#discordLink a {
+    color: rgb(114, 137, 218);
+}
+@keyframes logoImgRotation {
+    100% { transform: translate(-50%, -50%) rotateY(360deg); }
+}

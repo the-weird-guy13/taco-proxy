@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/index.css" rel="stylesheet">
+    <link id="favicon" href="images/favicon.ico" rel="icon">
+    <script src="https://kit.fontawesome.com/84672ba0d1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="js/config.js" defer></script>
+    <title>Settings | Taco Proxy</title>
+</head>
+<body>
+    <header>
+        <button id="settingsBackArrow" class="navBtn" title="Back to Home"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button>
+        <h1 id="title">Settings</h1>
+        <h1 id="title2">(Settings changes will be applied when the page is refreshed.)</h1>
+        <h3 class="settingsHeader">Tab Cloaking</h3><div class="divLine" style="top: 200px;"></div>
+        <h3 class="settingsHeader2" style="left: 50%; transform: translateX(-199%); top: 220px;">Tab Cloak</h3>
+        <button id="resetTabCloakBtn" style="left: 50%; transform: translateX(-310%); top: 266px;">Reset to Default</button>
+        <select id="tabCloakSelect" class="settingsSelect">
+            <option value="default">Default (Taco Proxy)</option>
+            <option value="google">Google</option>
+            <option value="classroom">Google Classroom</option>
+            <option value="classlink">Classlink</option>
+            <option value="ixl">IXL</option>
+            <option value="gmail">Gmail</option>
+            <option value="brainpop">BrainPop</option>
+        </select>
+        <h3 class="settingsHeader2" style="left: 50%; transform: translateX(22%); top: 220px;">about:blank Cloak</h3>
+    </header>
+    <script src="js/settings.js"></script>
+</body>
+</html>

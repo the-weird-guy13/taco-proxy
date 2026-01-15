@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-color: black;
+    margin-left: 0px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.tabs {
+    height: 40px;
+    border-bottom: blueviolet 2px solid;
+    display: flex;
+    align-items: center;
+}
+.tab {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.tab.dragging {
+    opacity: 0.5;
+}
+.tab.active {
+    background-color: blueviolet;
+}
+.tab .close {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.tab:hover {
+    transform: scale(1.05, 1.05);
+    transform: translate(0px, -4px);
+    box-shadow: 0px 0px 25px blueviolet;
+}
+#openTabToStart {
+    position: absolute;
+    display: flex;
+    top: 50vh;
+    left: 50vw;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#newTabBtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+#newTabBtn:hover {
+    transform: scale(1.05, 1.05);
+    transform: translate(0px, -4px);
+    box-shadow: 0px 0px 25px blueviolet;
+}
+.navBtn {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: blueviolet;
+    position: absolute;
+    cursor: pointer;
+}
+.navBtn:hover {
+    background-color: rgba(116, 41, 185, 0.664);
+}
+.navBtn:active {
+    background-color: blueviolet;
+}
+#prevPage {
+    left: 10px;
+}
+#nextPage {
+    left: 55px;
+}
+#refresh {
+    left: 100px;
+}
+#settingsBtn {
+    right: 10px;
+}
+#searchBar {
+    min-width: 200px;
+    height: 36px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: blueviolet;
+    background-color: black;
+    position: absolute;
+    left: 145px;
+    right: 55px;
+    width: auto;
+    padding-left: 10px;
+}
+#searchBar:focus-within {
+    height: 400px;
+}
+#searchBar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(143, 143, 143);
+    width: calc(100% - 30px);
+    height: 32px;
+}
+#searchBar input:focus {
+    border-bottom: white 1px solid;
+    color: white;
+}
+#searchBar i {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+#searchBar input:focus {
+    outline: none;
+    color: white;
+}
+#searchBtn {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+.searchBar {
+    padding-top: 10px;
+    z-index: 10;
+}
+main {
+    height: calc(100vh - 80px);
+    position: relative;
+}
+iframe {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    flex-direction: column;
+    width: 98.7%;
+    height: calc(100vh - 120px);
+    border: 2px solid;
+    border-color: blueviolet;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: black;
+}
+#title {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+#title2 {
+    display: flex;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+#settingsBackArrow {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    color: white;
+    cursor: pointer;
+}
+.settingsHeader {
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.divLine {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 2px;
+    background-color: blueviolet;
+}
+.settingsHeader2 {
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+#tabCloakSelect {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: blueviolet;
+    color: white;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-163%);
+}
+#resetTabCloakBtn {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: blueviolet;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#resetTabCloakBtn:hover {
+    background-color: rgba(116, 41, 185, 0.664);
+}
+#resetTabCloakBtn:active {
+    background-color: blueviolet;
+}
+/* Config UI, etc. */
+#version {
+    z-index: 20;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: blueviolet;
+    font-size: 0.9rem;
+    text-align: center;
+}
