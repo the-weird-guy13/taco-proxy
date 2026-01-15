@@ -250,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             searchBtn.click();
+            searchInput.blur();
         }
     });
     document.getElementById('searchInput').addEventListener('input', () => {

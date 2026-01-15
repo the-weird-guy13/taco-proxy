@@ -15,15 +15,20 @@ h1 {
     position: absolute;
     width: 150px;
     z-index: 3;
-    top: 190px;
+    top: 70px;
     left: 50vw;
     transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    display: inline-block;
 
     animation: 2s linear 0s infinite logoImgRotation;
 }
+.container {
+  perspective: 900px;
+}
 #credits {
     position: absolute;
-    top: 275px;
+    top: 325px;
     left: 50%;
     transform: translateX(-50%);
 }
