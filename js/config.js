@@ -1,8 +1,3 @@
-const version = document.createElement('div');
-version.id = 'version';
-version.textContent = 'Loading version...';
-document.body.appendChild(version);
-
 fetch('../config/config.json')
   .then(res => {
     if (!res.ok) {
@@ -18,3 +13,8 @@ fetch('../config/config.json')
     console.error('Fetch failed:', err);
     version.textContent = 'Version not available';
   });
+
+const version = document.createElement('div');
+version.id = 'version';
+version.textContent = 'Loading version...';
+document.body.appendChild(version);
