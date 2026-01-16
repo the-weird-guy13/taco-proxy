@@ -41,7 +41,7 @@ function getCookie(name) {
     return null;
 }
 
-if (getCookie("title") === null) {
+if (!getCookie("title")) {
     document.cookie = "title=Taco Proxy" + ";path=/";
     document.cookie = "icon=images/favicon.ico" + ";path=/";
 }
