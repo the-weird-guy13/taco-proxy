@@ -33,7 +33,7 @@ h1 {
     transform: translateX(-50%);
 }
 #credits a {
-    color: white;
+    color: red;
 }
 #discordLink {
     position: absolute;
