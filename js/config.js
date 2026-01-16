@@ -1,5 +1,6 @@
 fetch('./config/config.json')
   .then(res => {
+    console.log('Fetch status:', res.status);
     if (!res.ok) {
       throw new Error('HTTP error ' + res.status);
     }
