@@ -1,4 +1,4 @@
-fetch('../config/config.json')
+fetch('./config/config.json')
   .then(res => {
     if (!res.ok) {
       throw new Error('HTTP error ' + res.status);
